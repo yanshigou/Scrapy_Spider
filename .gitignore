@@ -1,0 +1,12 @@
+.git/
+.idea/
+.vscode/
+*.pyc
+*.xlsx
+upload/
+paoliuliang_server.py
+00*
+fabfile.py
+other/
+*.json
+*.csv
