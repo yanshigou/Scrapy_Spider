@@ -49,6 +49,7 @@ DOWNLOAD_DELAY = 0.5
 SPIDER_MIDDLEWARES = {
    # 'douban.middlewares.DoubanSpiderMiddleware': 543,
    #  'douban.middlewares.my_proxy': 543,
+    'douban.middlewares.my_useragent': 542,
 }
 
 # Enable or disable downloader middlewares
