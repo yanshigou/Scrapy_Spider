@@ -8,19 +8,21 @@ tags:
   - study
   - mongodb
   - 爬虫
+
 ---
 
 ## 前言
+
 **Scrapy，Python开发的一个快速,高层次的web抓取框架，用于抓取web站点并从页面中提取结构化的数据。Scrapy用途广泛，可以用于数据挖掘、监测和自动化测试。任何人都可以根据需求方便的修改。**
 
 **Scrapy是一套基于Twisted的异步处理框架，是纯python实现的爬虫框架，用户只需要定制开发几个模块就可以轻松的实现一个爬虫，用来抓取网页内容或者各种图片**
 
-
+[源码在我的github上](https://github.com/yanshigou/Scrapy_Spider/tree/master/douban) --->  <https://github.com/yanshigou/Scrapy_Spider/tree/master/douban>
 
 ## 环境
 
-* python3.6.5 64位
-* win10 64位
+- python3.6.5 64位
+- win10 64位
 
 
 
@@ -29,7 +31,7 @@ tags:
 **1.cmd中进入虚拟环境**
 
 > 这个不再过多说明
-> 
+>
 > **pip install scrapy**
 
 报出如下错误：
@@ -47,11 +49,11 @@ Command "d:\virtualenv\scrapy_py3\scripts\python3.exe -u -c "import setuptools, 
 
 > 我的为Twisted-18.4.0-cp36-cp36m-win_amd64.whl
 
-2. 运行命令：`pip install Twisted-18.4.0-cp36-cp36m-win_amd64.whl`
+1. 运行命令：`pip install Twisted-18.4.0-cp36-cp36m-win_amd64.whl`
 
->注意路径
+> 注意路径
 
-4. 再次进行 `pip install scrapy` 即可
+1. 再次进行 `pip install scrapy` 即可
 
 
 
@@ -188,7 +190,6 @@ MongoDB 服务已成功停止。
 C:\Program Files\MongoDB\Server\3.6\bin>mongod.exe --dbpath "d:\mongodb\db" --logpath "d:\mongodb\log\mongdb.log" --remove --serviceName MongoDB
 ```
 
-
 ### 配置环境变量
 
 右键我的电脑 > 高级系统设置 > 环境变量 > 系统变量 > Path > 新建添加 C:\Program Files\MongoDB\Server\3.6\bin
@@ -309,7 +310,7 @@ class DoubanSpiderSpider(scrapy.Spider):
 
 **回到终端输入scrapy crawl douban_spider**
 
-```python
+```
 (scrapy_py3) D:\dzt\douban\douban\spiders>scrapy crawl douban_spider
     
 2019-01-16 18:01:08 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: douban)
@@ -729,3 +730,5 @@ scrapy crawl douban_spider -o douban.json
 **json文件是Unicode存储的**
 
 ![](https://raw.githubusercontent.com/yanshigou/yanshigou.github.io/master/img/t/json.png)
+
+[源码在我的github上](https://github.com/yanshigou/Scrapy_Spider/tree/master/douban) --->  <https://github.com/yanshigou/Scrapy_Spider/tree/master/douban>
